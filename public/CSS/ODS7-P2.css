@@ -1,0 +1,56 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4a90e2;
+  }
+  .purpose-section {
+    background-color: #e0f7fa;
+    padding: 40px 0;
+  }
+  .ods-relations {
+    background-color: #f1f8e9;
+    padding: 40px 0;
+  }
+  .image-gallery {
+    background-color: #ffffff;
+    padding: 40px 0;
+  }
+  .image-box {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+  }
+  .image-box img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  .image-box img:hover {
+    transform: scale(1.05);
+  }
+  .image-box .caption {
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  .interactive-options {
+    background-color: #ede7f6;
+    padding: 40px 0;
+  }
+  .option-buttons .btn {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+  @media (max-width: 768px) {
+    .image-gallery .row {
+      display: block;
+    }
+  }

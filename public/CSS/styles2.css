@@ -1,0 +1,96 @@
+/* Sección de Misión, Visión y Valores */
+#mission-vision-valores {
+    padding: 60px 0;
+    background-color: transparent;
+}
+
+/* Estilos para las tarjetas */
+.wrap {
+    width: 100%;
+    max-width: 1100px;
+    margin: 10px auto 5px auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tarjeta-wrap {
+    perspective: 800px;
+}
+
+.tarjeta {
+    width: 300px;
+    height: 350px;
+    background: #c9a6a6; /* Fondo suave para las tarjetas */
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.7s ease;
+    box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adelante, .atras {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    border-radius: 8px;
+}
+
+.adelante {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.adelante i {
+    font-size: 2.5em;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.atras {
+    transform: rotateY(180deg);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #333; /* Color de texto */
+    font-family: "Montserrat", sans-serif;
+    background: #c9a6a6; /* Fondo suave para la parte trasera */
+}
+
+.tarjeta-wrap:hover .tarjeta {
+    transform: rotateY(180deg);
+}
+
+/* Estilos para las imágenes de las tarjetas */
+.card1 {
+    background-image: url('http://1.1m.yt/J9Kw7kl.jpg');
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.card2 {
+    background-image: url('http://1.1m.yt/dlxMf3R.jpg');
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.card3 {
+    background-image: url('http://3.1m.yt/EUB_xE.jpg');
+    background-size: cover;
+    border-radius: 8px;
+}
